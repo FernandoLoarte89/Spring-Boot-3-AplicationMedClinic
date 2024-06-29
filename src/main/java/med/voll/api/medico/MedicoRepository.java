@@ -11,6 +11,8 @@ import java.util.Optional;
 public interface MedicoRepository extends JpaRepository<Medico, Long> {
     Page<Medico> findByActivoTrue(Pageable paginacion);
 
+    //PRIMER CAMBIO EN INTELLIJ
+
     @Query("""
             select m from Medico m 
             where m.activo=1 and
